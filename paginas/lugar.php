@@ -137,13 +137,13 @@
                                                 $(this).click(function(e){
                                                     var id = e.target.id;
                                                     if(id=="imagenFace"){
-                                                        initialize(19.1, 101.1);
+                                                        initialize(19.96943659999999,-101.14191849999997);
                                                     }else if (id=="imagenFace2") {
-                                                        initialize(20, 101.1);
+                                                        initialize(16.178951,-95.1976113);
                                                     }else if (id=="imagenFace3") {
-                                                        initialize(30, 101.1);
+                                                        initialize(19.6196444,-100.2835336);
                                                     }else if (id=="imagenFace4") {
-                                                        initialize(40, 101.1);
+                                                        initialize(16.1790585,-95.19728409999999);
                                                     }
                                                 });
                                             });
