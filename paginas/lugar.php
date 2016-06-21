@@ -58,9 +58,27 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <p></p>
+                            <div class="container" id="select">
+                                
                             <img src="../fonts/menu.png" id="imagenMenu">
                             <h1 align="center">Xiinbal</h1>
+                              <div style="position:absolute; top:10px; right:10px; ">
+                                  <img src="../fonts/g+.png" id="imagenLoc">
+                                  <img src="../fonts/fb.png" id="imagenLoc">
+                                  <img src="../fonts/tw.png" id="imagenLoc">
+                                  <img src="../fonts/avatar.png" id="imagenLoc"> 
+                                  
+                                  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" > idioma <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header"></li>
+                            <li><a href="#">espanol</a></li>
+                            <li><a href="#">ingles</a></li>
+                            <li><a href="#">frances</a></li>
+                            <li><a href="#">Otro</a></li>
+                        </ul>
+                    </li>  
+                                  </div>
                             <div class="container" id="select">
                                 <div id="info">
                                     <font color="white" face="Comic Sans MS, Arial, MS Sans Serif" size="+3"><i><?php echo $_POST["selector"] ?></i></font>

@@ -22,6 +22,10 @@ body{
     float:left;
     width: 48%;
 }
+#imagenLoc{
+    width: 10%;
+    height: 10%;
+}
 #mapa{
     float:right;
     width: 51%;

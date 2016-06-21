@@ -7,7 +7,7 @@
 /* Toggle Styles */
 
 body{
-    background:url(../fonts/pais.png) no-repeat center center fixed;
+    background:url(../fonts/pais.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -22,14 +22,14 @@ body{
 #imagenLoc{
 
    
-    width: 40%;
-    height: 40%;
+    width: 10%;
+    height: 10%;
 }
 #imagenLoc1{
 
    
-    width: 10%;
-    height: 10%;
+    width: 7%;
+    height: 7%;
 }
 #imagenMenu{
     width: 3%;
