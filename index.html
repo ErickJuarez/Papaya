@@ -12,6 +12,9 @@
         <link href="css/simple-sidebar.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap-select.css">
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+        <script src="js/login.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-select.js"></script>
@@ -51,10 +54,14 @@
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
 
             
            
                                 
+=======
+                          
+>>>>>>> origin/master
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
@@ -63,8 +70,28 @@
                                   <img src="fonts/g+.png" id="imagenLoc">
                                   <img src="fonts/fb.png" id="imagenLoc">
                                   <img src="fonts/tw.png" id="imagenLoc">
-                                  <img src="fonts/avatar.png" id="imagenLoc"> 
-                                  
+                                   
+                                  <div id="loginContainer">
+                                    <a href="#" id="loginButton"><span>Login</span><em></em></a>
+                                    <div style="clear:both"></div>
+                                    <div id="loginBox">
+                                        <form id="loginForm">
+                                            <fieldset id="body">
+                                                <fieldset>
+                                                    <label for="email">Email</label>
+                                                    <input type="text" name="email" id="email" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <label for="password">Contrase&ntilde;a</label>
+                                                    <input type="password" name="password" id="password" />
+                                                </fieldset>
+                                                <input type="submit" id="login" value="Entrar" />
+                                                <label for="checkbox"><input type="checkbox" id="checkbox" />Recu&eacute;rdame</label>
+                                            </fieldset>
+                                            <span><a href="#">Perdiste tu contrase&ntilde;a?</a></span>
+                                        </form>
+                                    </div>
+                                </div>  
                                   <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" > idioma <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
