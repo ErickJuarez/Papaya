@@ -7,7 +7,7 @@
 /* Toggle Styles */
 
 body{
-    background:url(../fonts/pais.jpg) no-repeat center center fixed;
+    background:url(../fonts/blue.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,7 +17,12 @@ body{
     padding-top: 200px;
     width: 60%;
 }
+#imagenLogo{
 
+   
+    width: 40%;
+    height: 40%;
+}
 
 #imagenLoc{
 

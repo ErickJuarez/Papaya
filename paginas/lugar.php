@@ -99,13 +99,17 @@
             </div>
             <!-- /#sidebar-wrapper -->
             <!-- Page Content -->
+            <div style="position:absolute;  right:220px;"> 
+                            <img src="../fonts/Logo1.png" id="imagenLogo">
+                            </div>
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="container" id="select">
+                            </div>
+                            
                             <img src="../fonts/menu.png" id="imagenMenu">
-                            <h1 align="center">Xiinbal</h1>
                               <div style="position:absolute; top:10px; right:10px; ">
                                   <img src="../fonts/g+.png" id="imagenLoc">
                                   <img src="../fonts/fb.png" id="imagenLoc">

@@ -23,6 +23,8 @@
     </head>
     <body>
 
+      
+
 
         <div id="wrapper">
             <!-- Sidebar -->
@@ -57,21 +59,20 @@
                     </li>
                 </ul>
             </div>
+            <div style="position:absolute;  right:240px;"> 
+            <img src="../fonts/Logo1.png" id="imagenLogo">
+            </div>
             <!-- /#sidebar-wrapper -->
             <!-- Page Content -->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
+                        <form class="form-horizontal" role="form" action="../paginas/trapag.html" method="post">
                             <img src="../fonts/menu.png" id="imagenMenu">
-
-                            <center>
-                            <font color="white" size="+4" face="Bell MT" >Xiinbal</font>
-                             </center>
                             <div class="container" id="select">
-                              <form class="form-horizontal" role="form" action="../paginas/lugar.html" method="get">
                                   <div style="position:absolute; top:10px; right:10px;">
-                                  <img src="../fonts/g+.png" id="imagenLoc">
+                                  <inp src="../fonts/g+.png" id="imagenLoc">
                                   <img src="../fonts/fb.png" id="imagenLoc">
                                   <img src="../fonts/tw.png" id="imagenLoc">
                                   <img src="../fonts/avatar.png" id="imagenLoc"> 
@@ -87,8 +88,8 @@
                         </ul>
                     </li>  
                                   </div>
-
-                                  <div style="position:absolute; top:100px;left:430px;"> 
+                               
+                                  <div style="position:absolute; top:90px;left:440px;"> 
                                    <input type=image src="../fonts/com.png" id="imagenLoc1">
                                    <input type=image src="../fonts/cul.png" id="imagenLoc1">
                                    <input type=image src="../fonts/noche.png" id="imagenLoc1">
@@ -96,21 +97,36 @@
                                    <input type=image src="../fonts/fes.png" id="imagenLoc1"> 
                                     <input type=image src="../fonts/bus.png" id="imagenLoc1"> 
                                   </div>
+                                  </form>
+      
+    <!-- Modal content-->
+                                  <form type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
 
-                                  <div style="position:absolute; top:170px; left: 10px; w">
-                                  <img src="../fonts/prop.png" id="imagenProp" >
+                                  <div style="position:absolute; top:170px; left: 10px; ">
+                                  <input type=image src="../fonts/prop1.png" id="imagenProp" >
                                   <p></p>
-                                  <img src="../fonts/prop1.png" id="imagenProp">
-                                  </div>
-                                </div>
-                              </form>
+                                  <input type=image src="../fonts/prop.png" id="imagenProp">
+                                  <p></p>
+                                  <input type=image src="../fonts/prop2.png" id="imagenProp">
+                                   </div>
+                            <div id="myModal" class="modal fade" role="dialog">
+                           <div class="modal-dialog">
+
+    <!-- Modal content-->
+                       <div class="modal-content">
+                           <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             </div>
+                              </div>
+                              
+                               </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /#page-content-wrapper -->
-        </div>
+      
         <!-- /#wrapper -->
         <!-- Menu Toggle Script -->
         <script>
