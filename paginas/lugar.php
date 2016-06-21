@@ -59,7 +59,6 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="container" id="select">
-                                
                             <img src="../fonts/menu.png" id="imagenMenu">
                             <h1 align="center">Xiinbal</h1>
                               <div style="position:absolute; top:10px; right:10px; ">
