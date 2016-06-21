@@ -17,6 +17,51 @@
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/bootstrap-select.js"></script>
         <script src="../js/jquery.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript">
+            function initialize(lat, long) {
+                var latlng = new google.maps.LatLng(lat, long);//Vista del mapa
+                var settings = {
+                    zoom: 15,
+                    center: latlng,
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                    navigationControl: true,
+                    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                    mapTypeId: google.maps.MapTypeId.ROADMAP};
+                var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+                var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h1 id="firstHeading" class="firstHeading">OTRO</h1>'+
+                    '<div id="bodyContent">'+
+                    '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>'+
+                    '</div>'+
+                    '</div>';
+                
+                var companyImage = new google.maps.MarkerImage('images/logo.png',
+                    new google.maps.Size(100,50),
+                    new google.maps.Point(0,0),
+                    new google.maps.Point(50,50)
+                );
+
+                var companyShadow = new google.maps.MarkerImage('images/logo_shadow.png',
+                    new google.maps.Size(130,50),
+                    new google.maps.Point(0,0),
+                    new google.maps.Point(65, 50));
+
+                var companyPos = new google.maps.LatLng(lat, long);//Posicion del marcador
+
+                var companyMarker = new google.maps.Marker({
+                    position: companyPos,
+                    map: map,
+                    icon: companyImage,
+                    shadow: companyShadow,
+                    title:"OTRO",
+                    zIndex: 3});
+
+            }
+        </script>
     </head>
     <body>
         <div id="wrapper">
@@ -85,13 +130,31 @@
                                     <font color="white" face="Comic Sans MS, Arial, MS Sans Serif" size="+.5"><i><?php echo $_POST["selector"] ?> es un estado con X pueblos y Y puntos turisticos.</i></font>
                                 </div>
                                 <div id="cuadros" class="form-group">
-                                    <iframe src="frame.php"></iframe>
+                                    <iframe id="iframe" src="frame.php"></iframe>
+                                    <script type="text/javascript">
+                                        $('iframe').load(function(){
+                                            $(this).contents().find("body").on('click', function(event) { 
+                                                $(this).click(function(e){
+                                                    var id = e.target.id;
+                                                    if(id=="imagenFace"){
+                                                        initialize(19.1, 101.1);
+                                                    }else if (id=="imagenFace2") {
+                                                        initialize(20, 101.1);
+                                                    }else if (id=="imagenFace3") {
+                                                        initialize(30, 101.1);
+                                                    }else if (id=="imagenFace4") {
+                                                        initialize(40, 101.1);
+                                                    }
+                                                });
+                                            });
+                                        });
+                                    </script>
                                 </div>
                                 <div id="mapa" class="col-lg-10">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5759.514955843664!2d-101.19724496386394!3d19.703456735569727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0ba2b29da7e3%3A0x04016978679c8620!2sMorel ia%2C+Mich.!5e0!3m2!1ses!2smx!4v1466144907279" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <div id="map_canvas" style="width:500px; height:300px"></div>
                                 </div>
                                 <div id="boton">
-                                    <img src="../fonts/boton.png" id="imagenBoton">
+                                    <img onclick="initialize(19.1, 101.1)" src="../fonts/boton.png" id="imagenBoton">
                                 </div>
                             </div>
                         </div>
