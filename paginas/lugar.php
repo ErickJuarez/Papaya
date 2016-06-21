@@ -154,7 +154,7 @@
                                     <div id="map_canvas" style="width:500px; height:300px"></div>
                                 </div>
                                 <div id="boton">
-                                    <img onclick="initialize(19.1, 101.1)" src="../fonts/boton.png" id="imagenBoton">
+                                    <a href="dopag.html"><img src="../fonts/boton.png" id="imagenBoton"></a>
                                 </div>
                             </div>
                         </div>
